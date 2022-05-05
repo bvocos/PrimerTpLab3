@@ -1,0 +1,60 @@
+<html lang="es">
+
+<head>
+    <title>Primer trabajo práctico</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Total">
+        <strong><u><h1>Bienvenido a un simulador de Plazo Fijo</h1></u></strong>
+    </div>
+    <div class="NombreApellido">
+        <u><label for="nombre">Nombre:</label></u>
+        <input type="text" id="txtNombre" placeholder="Ingrese su nombre"><br>
+        <p id="MsjErrorNombre"></p>
+        <u><label for="nombre">Apellido:</label></u>
+        <input type="text" id="txtApellido" placeholder="Ingrese su Apellido">
+        <p id="MsjErrorApellido"></p>
+    </div>
+    <div class="MontosDias">
+        <br>
+        <u><label for="monto">Ingrese el monto que desea invertir:</label></u>
+        <input type="text" id="txtMonto" placeholder="Ingrese un monto a invertir"><br>
+        <br>
+        <p id="MsjErrorMonto"></p>
+        <br>
+        <label for="dias">Seleccione la contidad de dias del plazo</label>
+        <select id="Dias">
+            <option value=30 >30</option>
+            <option value=60>60</option>
+            <option value=120>120</option>
+            <option value=360>360</option>
+          </select>
+
+        <label for="reinvertir">Desea reinvertir el capital?</label>
+        <select id="selector">
+            <option  value="Si">Si</option>
+            <option  value="No">No</option>
+          </select>
+        <br>
+        <br>
+    </div>
+
+    <button id="btnCalcular">Calcular</button>
+
+    <p id="mostrar"></p>
+
+    <table table id="table">
+
+    </table>
+
+    <script src="Logica.js"></script>
+
+
+
+</body>
+
+</html>
